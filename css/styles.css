@@ -117,3 +117,17 @@ p {
     padding-left: 0.3rem;
   }
 }
+/* Icons */
+.icon {
+  height: 40px;
+  width: 40px;
+}
+.icon-background {
+  display: inline-flex;
+  background-color: #f3f9fa;
+  padding: 1.2rem;
+  border-radius: 100px;
+}
+.icon--primary {
+  fill: var(--color-primary-card-icon);
+}
