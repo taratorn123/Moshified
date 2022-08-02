@@ -1,1 +1,9 @@
-
+/* Color Palette */
+:root {
+  --color-primary: #1b0760;
+  --color-secondary: #00d9ff;
+  --color-paragraph: #8f8aa0;
+  --color-info: #ff3400;
+  --color-primary-card-icon: #2584ff;
+  --color-quote: #5c5577;
+}
