@@ -7,6 +7,11 @@
   --color-primary-card-icon: #2584ff;
   --color-quote: #5c5577;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Typography */
 /* 62.5% = 10px */
 html {
@@ -130,4 +135,57 @@ p {
 }
 .icon--primary {
   fill: var(--color-primary-card-icon);
+}
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 2rem 3rem;
+  border: 0;
+  border-radius: 40px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  margin: 1rem 0;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+.btn--primary {
+  color: #ffffff;
+  background-color: var(--color-primary);
+}
+.btn--secondary {
+  color: #ffffff;
+  background-color: var(--color-secondary);
+}
+.btn--info {
+  color: #ffffff;
+  background-color: var(--color-info);
+}
+.btn--outline {
+  background-color: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+.btn--primary:hover {
+  background: #3a8ffd;
+}
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+.btn--info:hover {
+  background: #ec3000;
+}
+.btn--outline:hover {
+  background: var(--color-primary);
+  color: white;
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
