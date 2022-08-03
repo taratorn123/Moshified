@@ -295,3 +295,29 @@ p {
     font-size: 1.7rem;
   }
 }
+/* Medias */
+.media {
+  display: flex;
+}
+.media__image {
+  margin-top: 1rem;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__title {
+  font-size: 2.4rem;
+  margin-top: 0;
+}
+.media__detail {
+  color: var(--color-paragraph);
+  font-size: 2rem;
+}
+@media screen and (min-width: 1024px) {
+  .media__title {
+    font-size: 2.4rem;
+  }
+  .media__detail {
+    font-size: 1.8rem;
+  }
+}
