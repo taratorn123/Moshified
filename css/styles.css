@@ -130,14 +130,24 @@ p {
   height: 40px;
   width: 40px;
 }
+.icon--small {
+  height: 30px;
+  width: 30px;
+}
 .icon-background {
   background-color: #f3f9fa;
   border-radius: 100px;
   display: inline-flex;
   padding: 1.2rem;
 }
+.icon-background--info {
+  background-color: var(--color-info);
+}
 .icon--primary {
   fill: var(--color-primary-card-icon);
+}
+.icon--white {
+  fill: white;
 }
 /* Buttons */
 .btn {
@@ -320,4 +330,53 @@ p {
   .media__detail {
     font-size: 1.8rem;
   }
+}
+/* Quotes */
+.quote__text {
+  color: #5c5577;
+}
+.quote__author {
+  color: #1f0c68;
+}
+.quote__text,
+.quote__author {
+  font-size: 3rem;
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__organization {
+  font-size: 2rem;
+  opacity: 40%;
+}
+/* Grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .testimonial .quote__text,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+}
+/* Testimonials */
+.testimonial {
+  padding: 3rem;
+}
+.testimonial__image {
+  position: relative;
+}
+.testimonial__image > .icon-background {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+.testimonial__image > img {
+  width: 100%;
 }
