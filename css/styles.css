@@ -35,6 +35,7 @@ h2,
 h3 {
   color: var(--color-primary);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 h1 {
   font-size: 7rem;
@@ -524,5 +525,27 @@ p {
   .nav__list > .list__items {
     border-bottom: none;
     font-size: 1.6rem;
+  }
+}
+/* Hero */
+.hero {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  padding-top: 3rem;
+}
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 3rem 0 4rem;
+}
+.hero__image {
+  width: 100%;
+}
+.hero__content {
+  align-self: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__content {
+    text-align: left;
   }
 }
