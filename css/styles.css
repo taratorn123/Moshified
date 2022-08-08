@@ -38,7 +38,7 @@ h3 {
   line-height: 1.1;
 }
 h1 {
-  font-size: 7rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 4rem;
@@ -162,7 +162,7 @@ p {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -224,7 +224,8 @@ p {
   color: var(--color-primary);
   font-size: 2rem;
   outline: 0;
-  padding: 1.5rem 3.5rem;
+  padding: 1.5rem 2rem;
+  overflow: hidden;
 }
 ::placeholder {
   color: #ccc;
@@ -236,6 +237,8 @@ p {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
+  max-width: 690px;
+  margin: 4rem auto;
 }
 .input-group .input {
   border: 0;
@@ -377,14 +380,18 @@ p {
 .grid {
   display: grid;
 }
-.grid--2x3 {
+.grid--1x2 {
+  justify-content: center;
+}
+.grid--3x2 {
   justify-items: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 6rem);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 6rem);
 }
 .grid--1x3 {
   justify-items: center;
+  align-items: center;
 }
 @media screen and (min-width: 1024px) {
   .grid--1x2 {
@@ -394,7 +401,7 @@ p {
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
   }
-  .grid--2x3 {
+  .grid--3x2 {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
   .testimonial .quote__text,
@@ -557,19 +564,20 @@ p {
 }
 /* Hero */
 .hero {
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  padding-top: 3rem;
+  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  padding: var(--padding-vertical) 2rem;
 }
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
   letter-spacing: 1px;
-  margin: 3rem 0 4rem;
+  margin: 2rem 0 4rem;
 }
 .hero__image {
   width: 100%;
 }
 .hero__content {
+  justify-self: center;
   align-self: center;
 }
 @media screen and (min-width: 1024px) {
