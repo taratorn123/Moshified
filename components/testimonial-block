@@ -1,0 +1,48 @@
+<section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+          animi?
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <img src="images/testimonial.jpg" alt="" />
+              <span class="icon-background icon-background--info">
+                <svg class="icon icon--small icon--white">
+                  <use xlink:href="/images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+            </div>
+            <div class="testimonial__quote">
+              <blockquote class="quote">
+                <p class="quote__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                  tenetur maiores enim facilis ipsa. Eos libero harum aut nobis
+                  dicta.
+                </p>
+                <footer>
+                  <div class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary">
+                        <use xlink:href="/images/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title quote__author">John Smith</h3>
+                      <p class="media__detail quote__organization">
+                        ABC Company ceo
+                      </p>
+                    </div>
+                  </div>
+                </footer>
+              </blockquote>
+            </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
